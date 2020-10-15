@@ -4,6 +4,7 @@
 
 <h3 align="center">API RESTful Sign-in/up - BOLD BR</h3>
 
+
 <div align="center">
   
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -11,9 +12,12 @@
 
 </div>
 
+
 ## Apresentação:
 
 Projeto: API RESTful seguindo conceito **MVC** utilizando  **NodeJS**, padronização de código **Eslint** e **Prettier**. Este projeto foi criado para o processo seletivo da **BOLD BR**.
+
+ **[Aplicação Hospedada na Heroku](https://api-restful-boldbr.herokuapp.com/)**
 
 Pacotes principais: 
 - **Express** responsável pela criação das rotas e inicio dos `server`.
@@ -54,8 +58,7 @@ Usar status codes de acordo, este endpoint deverá receber um usuário com os se
   criação)
 * **token**: token de acesso da API (pode ser um GUID ou um JWT)
 
-- Caso o e-mail já exista, deverá retornar erro com a mensagem "E-mail já
-      existente".
+- Caso o e-mail já exista, deverá retornar erro com a mensagem "E-mail já existente".
 - Token deverá ser persistido junto com o usuário
 
 #### **Sign in**
