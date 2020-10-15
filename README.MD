@@ -115,11 +115,11 @@ MONGO_CONN=mongodb+srv://<user>:<pass>@cluster0-okpdn.gcp.mongodb.net/api
    "senha": "123",
    "telefones": [
       {
-	"numero": "999865802",
+	"numero": "951415258",
 	"ddd": "11"
       },
       {
-	"numero": "999865802",
+	"numero": "951415258",
 	"ddd": "11"
       }
    ]
@@ -142,22 +142,22 @@ Observação importante: rota `/users/:user_id` é necessário passar no **heade
 ## **Test**
 
 ```javascript
-yarn run v1.22.5
+yarn run v1.22.0
 $ jest --setupFiles dotenv/config --detectOpenHandles --forceExit
- PASS  tests/api.test.js
+ PASS  tests/api.test.js (12.319 s)
+  Create
+    √ should create user session (3308 ms)
   Authentication
-    ✓ should create session authentication (1233 ms)
-  Login
-    ✓ should create user session (131 ms)
+    √ should create session authentication (355 ms)
   User
-    ✓ should list user by id (9 ms)
+    √ should list user by id (38 ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        2.136 s
+Time:        12.902 s, estimated 15 s
 Ran all test suites.
-Done in 2.58s.
+Done in 18.53s.
 ```
 
 ## Contato
