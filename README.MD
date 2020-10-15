@@ -23,6 +23,7 @@ Pacotes principais:
 - **Express** responsável pela criação das rotas e inicio dos `server`.
 - **JWT** para persistência do `token` por 30 minutos, mantendo a segurança e garantindo a integridade da API. 
 - **Mongoose**, um ORM para conexão com banco de dados NoSQL (**MongoDB**)
+- **Yup** para validação dos dados enviados para a API, para garantir a integridade da aplicação.
 - **Jest** para realização de tests unitários.
 
 ## **Requisitos**
