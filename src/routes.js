@@ -1,7 +1,16 @@
-const routes = require("express").Router();
+const routes = require('express').Router();
 
-routes.post("/login", () => {});
-routes.post("/user", () => {});
-routes.get("/user/:user_id", () => {});
+const UserController = require('./controllers/UserController');
+const SignController = require('./controllers/SignController');
+
+const { SingIn, SingUp } = require('./middlewares/Validation');
+const Auth = require('./middlewares/Auth');
+
+routes.post('/sign-in', SingIn, SignController.store);
+routes.post('/users', SingUp, UserController.store);
+
+routes.use(Auth);
+
+routes.get('/users/:user_id', UserController.show);
 
 module.exports = routes;
